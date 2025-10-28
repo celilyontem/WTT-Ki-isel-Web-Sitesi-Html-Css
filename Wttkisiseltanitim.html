@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Celil Yöntem</title>
+    <style>
+        /* CSS Başlangıcı */
+
+        :root {
+            /* Renk Değişkenleri */
+            --background-color: #1a1a2e; /* Koyu Mavi */
+            --card-color: #1f4068;      /* Daha Açık Mavi */
+            --text-color: #ffffff;
+            --highlight-color: #e43f5a; /* Kırmızı/Vurgu */
+            --link-color: #3e99e2;
+        }
+
+        /* Tüm Sayfayı Ortala ve Arka Plan Rengini Ayarla */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Kartın Ana Konteyneri */
+        .profile-card {
+            background-color: var(--card-color);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Profil Resmi Alanı */
+        .profile-img-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--highlight-color);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* İsim ve Başlık */
+        .profile-name {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .profile-title {
+            color: var(--highlight-color);
+            margin: 5px 0 20px;
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        /* Kısa Açıklama */
+        .profile-bio {
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Bağlantılar Alanı */
+        .social-links a {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: 
+                background-color 0.3s, 
+                color 0.3s;
+            font-weight: bold;
+        }
+
+        /* Bana Ulaşın Butonu için Özel Stil */
+        .contact-button {
+            background-color: var(--highlight-color) !important; 
+            margin-top: 20px !important;
+            box-shadow: 0 4px 15px rgba(228, 63, 90, 0.5);
+        }
+
+        .social-links a:hover {
+            background-color: var(--highlight-color);
+            color: var(--text-color);
+        }
+
+        /* Bana Ulaşın Butonu Hover Stili */
+        .contact-button:hover {
+            background-color: #f06292 !important; 
+        }
+
+        /* CSS Bitişi */
+    </style>
+</head>
+<body>
+    
+    <div class="profile-card">
+        
+        <div class="profile-img-container">
+            <img 
+                src="C:\Users\Celil\Desktop\profil.jpg" 
+                alt="Profil Resmi Yüklenemedi"
+            >
+        </div>
+
+        <h1 class="profile-name">
+            Celil Yöntem
+        </h1>
+        
+        <p class="profile-title">
+            Öğrenci
+        </p>
+
+        <p class="profile-bio">
+            Web Tasarımının temellerini öğreniyorum ve 
+            bu alanda kendimi geliştirmeye devam ediyorum.
+        </p>
+
+        <div class="social-links">
+            <a href="https://github.com/celilyontem" 
+               target="_blank">
+                GitHub
+            </a>
+            <a href="https://www.instagram.com/celil.yntm7" 
+               target="_blank">
+                Instagram
+            </a>
+            <a href="https://x.com/iamcelioo" 
+               target="_blank">
+                X (Twitter)
+            </a>
+            
+            <a href="mailto:celilyntm@gmail.com" 
+               class="contact-button">
+                Bana Ulaşın
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
